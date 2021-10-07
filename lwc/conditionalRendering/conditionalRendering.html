@@ -1,0 +1,20 @@
+<template>
+    <lightning-card>
+        <lightning-input type="checkbox" label="Showing Demo !!!"
+        onchange={showDivHandler}></lightning-input>
+
+        <template if:true={showDiv}>
+            <div class="slds-m-around_medium">Showing Div !</div>
+        </template>
+
+        <template for:each={cityList} for:item="city">
+            <p key={city}>{city}</p>
+        </template>
+
+        <div>--------Using Iterator--</div>
+        
+        <template iterator:vt={cityList}>
+            <p key={vt.value}>{vt.value}</p>
+        </template>
+    </lightning-card>
+</template>

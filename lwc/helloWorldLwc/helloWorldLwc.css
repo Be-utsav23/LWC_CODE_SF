@@ -1,0 +1,14 @@
+p{
+    font-size: x-large;
+    font-weight: bold;
+    color: brown;
+    background-color: chartreuse;
+}
+img{
+    border: solid cadetblue 10px;
+    border-radius: 70%;
+    shape-margin: 5px;
+}
+:host{
+    color:lavender;
+}

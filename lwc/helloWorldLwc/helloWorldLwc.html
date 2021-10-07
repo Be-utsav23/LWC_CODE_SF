@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Hello world!">
+        
+        <div class="slds-m-around_medium">
+            <p>Hello {greeting} !</p>
+            <img src={profilePic} alt="profile-pic">
+            <lightning-input label="User name" value={greeting} onchange={inputChangeHandler}></lightning-input>
+        </div>
+    </lightning-card>
+</template>
