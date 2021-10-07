@@ -1,0 +1,17 @@
+<template>
+    <template if:true={showHotelInfo}>
+        <div class="slds-p-around_medium">
+            <!-- Public Property -->
+            <!-- <lightning-tile label={hotelRoomInfo.roomName}>
+                <p class="slds-truncate">
+                    Room Name : {hotelRoomInfo.roomName}
+                    Capacity  : {hotelRoomInfo.capacity}
+                </p>
+            </lightning-tile> -->
+
+            <!-- slots and unnamed slots -->
+            <slot name="roomInfo"></slot>
+            <slot> </slot>
+        </div>
+    </template>
+</template>

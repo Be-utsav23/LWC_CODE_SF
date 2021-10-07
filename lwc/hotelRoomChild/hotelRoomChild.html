@@ -1,0 +1,10 @@
+<template>
+    <div class="slds-p-around_medium">
+        <lightning-tile label={hotelRoomInfo.roomName} onclick={tileClickHandler}>
+            <p class="slds-truncate" title={hotelRoomInfo.roomCapacity}>
+               Room Capacity  : {hotelRoomInfo.roomCapacity}
+            </p>
+        </lightning-tile>
+
+    </div>
+</template>
