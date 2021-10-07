@@ -1,0 +1,10 @@
+<template>
+    <h1>AAJTAK SABSE PEHLE</h1>
+    <ul style="background-color: cadetblue;color: aqua;">
+        <template for:each={todos} for:item=todo>
+        <li key={todo}>
+            <c-todo-item item-name={todo} show-todo></c-todo-item>
+        </li>
+        </template>
+    </ul>
+</template>
